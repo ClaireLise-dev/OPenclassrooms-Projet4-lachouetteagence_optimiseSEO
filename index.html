@@ -16,7 +16,7 @@
 	<meta property="og:title" content="La Chouette Agence - Entreprise webdesign Lyon" />
 	<meta property="og:url" content="https://clairelise-dev.github.io/lachouetteagence_optimiseSEO/index.html" />
 	<meta property="og:image" content="la-chouette-agence-bannière.jpg" />
-    <meta name="description" content="La Chouette Agence est une entreprise de webdesign située à Lyon, notre agence web regroupe les meilleurs webdesigners de la région pour vous accompagner dans la création de votre site web.">
+    <meta property="og:description" content="La Chouette Agence est une entreprise de webdesign située à Lyon, notre agence web regroupe les meilleurs webdesigners de la région pour vous accompagner dans la création de votre site web.">
 	<meta property="og:site_name" content="La chouette agence" />
 	<meta property="og:type" content="website" />
 	<meta property="og:image:alt" content="Création de site web Lyon">
@@ -56,6 +56,9 @@
 		<nav class="navbar row">
 			<div class="navbar-header">
 				<a class="navbar-brand" href="index.html" title="Accueil - La chouette agence"><img src="img/la-chouette-agence.png" alt="La Chouette Agence - Entreprise de Webdesign à Lyon" height="40" /></a>
+				<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
+					<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+				</button>
 			</div>
 			<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
 				<ul class="site-navigation nav navbar-nav">
@@ -150,10 +153,14 @@
 </section>
 <!-- bloc-2-services END -->
 
+ <!-- ScrollToTop Button -->
+ <a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
+ <!-- ScrollToTop Button END-->
+
 <!-- bloc-3-what-i-do -->
 <section class="bloc tc-white bgc-atomic-tangerine bg-presentation d-bloc bloc-bg-texture texture-paper b-parallax" id="bloc-3-what-i-do">
 	<div class="container bloc-lg">
-		<article class="row tight-width-whitespace black-background">
+		<div class="row tight-width-whitespace black-background">
 			<div class="col-sm-12">
 				<h2 class="mg-md text-center tc-white">
 					Nous souhaitons aider les entreprises de la région Lyonnaise à se développer et à connaître le succès. Nous travaillons pour aider les entreprises locales à attirer de nouveaux clients .<br>
@@ -162,7 +169,7 @@
 					Nous aimons collaborer avec des entrepreneurs créatifs et des entreprises locale, qu’elles aient besoin de créer un site de A à Z ou de donner un coup de jeune à leur site. Que vous ayez besoin d’une identité visuelle complète ou d’une refonte de votre site, n’hésitez pas à nous contacter. Nous travaillerons ensemble pour créer des sites beau et bien structurés, qui seront facilement trouvable sur les moteurs de recherche. <br><br><a class="ltc-white bold-link" href="page2.html">Contactez notre équipe</a><br>
 				</p>
 			</div>
-		</article>
+		</div>
 	</div>
 </section>
 <!-- bloc-3-what-i-do END -->
@@ -177,7 +184,7 @@
 		</div>
 		<div class="row tight-width-whitespace portfolio-row">
 			<article class="col-sm-6">
-				<a href="#" data-lightbox="img/1.jpg" data-gallery-id="gallery-1" data-caption="Refonte d'un site web pour un journal local" data-frame="snapshot-lb"><img src="img/1.jpg" alt="Site web d'un journal" class="img-responsive portfolio-thumb" /></a>
+				<a href="#" data-lightbox="img/site-journal-local.jpg" data-gallery-id="gallery-1" data-caption="Refonte d'un site web pour un journal local" data-frame="snapshot-lb"><img src="img/site-journal-local.jpg" alt="Site web d'un journal" class="img-responsive portfolio-thumb" /></a>
 				<h3 class="mg-md text-center">
 					Refonte d'un site web pour un journal local
 				</h3>
@@ -186,7 +193,7 @@
 				</p>
 			</article>
 			<article class="col-sm-6">
-				<a href="#" data-lightbox="img/2.jpg" data-gallery-id="gallery-1" data-caption="Création d'un site web pour photographes" data-frame="snapshot-lb"><img src="img/2.jpg" class="img-responsive portfolio-thumb" alt="Site web photographe" /></a>
+				<a href="#" data-lightbox="img/site-photographe.jpg" data-gallery-id="gallery-1" data-caption="Création d'un site web pour photographes" data-frame="snapshot-lb"><img src="img/site-photographe.jpg" class="img-responsive portfolio-thumb" alt="Site web photographe" /></a>
 				<h3 class="mg-md text-center">
 					Création d'un site web pour photographes
 				</h3>
@@ -197,7 +204,7 @@
 		</div>
 		<div class="row tight-width-whitespace portfolio-row">
 			<article class="col-sm-6">
-				<a href="#" data-lightbox="img/3.bmp" data-gallery-id="gallery-1" data-caption="Création d'un site web pour un voyageur" data-frame="snapshot-lb"><img src="img/3.bmp" class="img-responsive portfolio-thumb" alt="Site web d'un voyageur"/></a>
+				<a href="#" data-lightbox="img/site-voyageur.jpg" data-gallery-id="gallery-1" data-caption="Création d'un site web pour un voyageur" data-frame="snapshot-lb"><img src="img/site-voyageur.jpg" class="img-responsive portfolio-thumb" alt="Site web d'un voyageur"/></a>
 				<h3 class="mg-md text-center">
 					Création d'un site internet pour un voyageur
 				</h3>
@@ -206,7 +213,7 @@
 				</p>
 			</article>
 			<article class="col-sm-6">
-				<a href="#" data-lightbox="img/4.bmp" data-gallery-id="gallery-1" data-caption="Conception d'un site pour une agence de mariage" data-frame="snapshot-lb"><img src="img/4.bmp" class="img-responsive portfolio-thumb" alt="Création site web pour une agence de marriage" /></a>
+				<a href="#" data-lightbox="img/site-mariage.jpg" data-gallery-id="gallery-1" data-caption="Conception d'un site pour une agence de mariage" data-frame="snapshot-lb"><img src="img/site-mariage.jpg" class="img-responsive portfolio-thumb" alt="Création site web pour une agence de marriage" /></a>
 				<h3 class="mg-md text-center">
 					Conception d'un site pour une agence de mariage
 				</h3>
@@ -224,10 +231,10 @@
 	<div class="container bloc-lg">
 		<div class="row">
 			<h2 class="mg-md text-center tc-white">
-				Prêt pour redonner vie à votre projet ?<br>Contactez notre équipe !
+				Prêt pour redonner vie à votre projet ?
 			</h2>
 			<div class="col-sm-12 text-center">
-				<a href="contact_agence-web-lyon.html" class="btn btn-atomic-tangerine btn-clean btn-rd btn-lg cta-hero" title="Formulaire de contact">Contact</a>
+				<a href="contact_agence-web-lyon.html" class="btn btn-atomic-tangerine btn-clean btn-rd btn-lg cta-hero" title="Formulaire de contact">Contactez nous!</a>
 			</div>
 		</div>
 	</div>
